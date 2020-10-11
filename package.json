@@ -1,0 +1,27 @@
+{
+  "name": "sahajkohli_personalsite",
+  "version": "1.0.0",
+  "description": "Sahaj Kohli's personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SahajKohli/personalSite.git"
+  },
+  "keywords": [
+    "Sahaj",
+    "Kohli",
+    "personal",
+    "site",
+    "react",
+    "parcel"
+  ],
+  "author": "Sahaj Kohli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SahajKohli/personalSite/issues"
+  },
+  "homepage": "https://github.com/SahajKohli/personalSite#readme"
+}
