@@ -1,0 +1,7 @@
+/*******************************
+         Site Overrides
+*******************************/
+a:hover {
+  color: rgb(242, 113, 28);
+  text-decoration: none;
+}

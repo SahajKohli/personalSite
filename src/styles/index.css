@@ -1,4 +1,9 @@
 body {
-    background-image: url("../images/background3.PNG");
+    background-image: url("../images/background.PNG");
     background-color: black;
+}
+
+.removePadding {
+    padding-left: 0px;
+    margin: 0px;
 }

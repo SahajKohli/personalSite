@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@textColor: @pink;
+@invertedBorderSize: 0px;
+@hoverColor: @black;
+@basicHoverBackground: @orange;

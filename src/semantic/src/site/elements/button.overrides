@@ -1,0 +1,6 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.inverted.button:hover {
+background: @orange;
+}

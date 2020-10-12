@@ -1,0 +1,13 @@
+.actionItemtrue {
+    font-size: xx-large;
+    text-shadow: 2px 2px white;
+    font-weight: bold;
+    color: rgb(242, 113, 28);
+}
+
+.actionItemfalse {
+    text-shadow: 2px 2px grey;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}

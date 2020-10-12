@@ -3,10 +3,7 @@ import {render} from 'react-dom';
 import { Router, RouteComponentProps, Link } from "@reach/router"
 import Main from './pages/Main'
 import Header from './components/header/Header';
-import 'semantic-ui-css/semantic.min.css';
-//import '../src/styles/index.css';
-
-
+import './styles/index.css';
 const RouterPage = (
     props: { pageComponent: JSX.Element } & RouteComponentProps
   ) => props.pageComponent;
