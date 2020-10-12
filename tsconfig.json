@@ -1,0 +1,7 @@
+{
+    //Have to add this to make sure that react works
+    "compilerOptions": {
+        "jsx": "react",
+        "esModuleInterop": true
+    }
+}
