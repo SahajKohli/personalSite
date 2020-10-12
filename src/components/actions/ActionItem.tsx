@@ -28,8 +28,8 @@ export const ActionItem = (props: ActionItemProps) => {
             visible={toggled}
           >
                       <Button
-        onMouseEnter={() => setToggle(true)}
-        onMouseLeave={() => setToggle(false)}
+        onMouseEnter={() => setToggle(false)}
+        onMouseLeave={() => setToggle(true)}
          inverted circular icon={props.icon} />
           </Transition>
 
@@ -39,8 +39,8 @@ export const ActionItem = (props: ActionItemProps) => {
             visible={toggled}
           >
               <div 
-              onMouseEnter={() => setToggle(true)}
-              onMouseLeave={() => setToggle(false)}
+              onMouseEnter={() => setToggle(false)}
+              onMouseLeave={() => setToggle(true)}
               >
                   
                 <Link className={className}  to={props.url}>{props.itemName}</Link>
