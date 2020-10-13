@@ -25,17 +25,6 @@ const IndexLede = (props: IndexLedeProps) => {
                 </GridColumn>
 
             </GridRow>
-            <GridRow>
-                <GridColumn width='3'>
-
-                </GridColumn>
-                <GridColumn width='10'>
-                    <Divider section />
-                </GridColumn>
-                <GridColumn width='3'>
-
-                </GridColumn>
-            </GridRow>
         </Grid>
 
     );

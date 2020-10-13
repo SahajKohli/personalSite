@@ -48,6 +48,15 @@ const Actions = (props: ActionsProps) => {
                             <ActionItem itemName={props.actionItem3.itemName} duration= {props.actionItem3.duration} animation={props.actionItem3.animation} url={props.actionItem3.url} icon={props.actionItem3.icon}/>
                        </GridColumn>
                    </GridRow>
+                   <GridRow>
+                        <GridColumn width='3'>
+                        </GridColumn>
+                        <GridColumn width='10'>
+                            <Divider section />
+                        </GridColumn>
+                        <GridColumn width='3'>
+                        </GridColumn>
+                    </GridRow>
                    </Grid>
             </GridColumn>
 
