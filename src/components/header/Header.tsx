@@ -1,38 +1,65 @@
 import React from 'react'
-import {Segment, Menu, Container, Button, Icon, Grid, GridColumn, GridRow} from 'semantic-ui-react'
+import {Segment, Menu, Container, Button, Grid, GridColumn, GridRow, Icon} from 'semantic-ui-react'
 import '../../semantic/dist/semantic.min.css';
+import {Link} from '@reach/router';
+import iconImage from '../../images/icon2.png';
 
-const Header = () => {
+const HeaderOfSite = () => {
 
     return (
         <div>
             <Grid inverted>
-                <GridRow>
+                <GridRow  stretched>
 
                 </GridRow>
                 <Grid.Row >
-                    <GridColumn width='1'>
-                    <Button  inverted icon='sidebar' />
+                    <GridColumn width='3' verticalAlign='middle' textAlign='center'>
+                        <Link to='/'>
+                            <div style={{display:'inline-block'}}>
+                                <img src={iconImage} style={{
+                                    borderRadius: '100%',
+                                    width:'40px',
+                                    height:'40px',
+                                    backgroundColor: "orange",
+                                    float: 'left',
+                                }}></img>
+                                <div
+                                style={{
+                                    float: 'right',
+                                    verticalAlign:'middle',
+                                    textAlign:'right',
+                                    paddingLeft: '10px',
+                                    paddingTop:'10px',
+                                    color: 'grey',
+                                    fontWeight:'bold',
+                                    fontFamily: 'unset',
+                                }}
+                                >Sahaj Kohli</div>
+                            </div>
+                        </Link>
 
                     </GridColumn>
-                    <GridColumn width='1'>
-                    <Button inverted icon='home' />
 
-                    </GridColumn>
+                    <GridColumn width='6'></GridColumn>
 
-                    <GridColumn width='9'>
-
-                    </GridColumn>
-                    <GridColumn width='1'>
-                        <Button inverted circular icon='github' />
-                    </GridColumn>
                     <GridColumn width='2'>
+                        <Button inverted circular icon='github' href='https://github.com/SahajKohli' />
+                    </GridColumn>
+
+                    <GridColumn width='3'>
                         <Button.Group >
-                            <Button inverted>About</Button>
-                            <Button inverted>Daily</Button>
-                            <Button inverted>Contact</Button>
+                            <Button inverted>
+                                <Link className='headerNav'to='/resume'>About</Link>
+                            </Button>
+                            <Button inverted>
+                                <Link className='headerNav' to='/dailies'>Daily</Link>
+                            </Button>
+                            <Button inverted>
+                                <Link className='headerNav' to='/connect'>Contact</Link>
+                            </Button>
                         </Button.Group>
                     </GridColumn>
+
                 </Grid.Row>
                 <Grid.Row>
 
@@ -48,4 +75,4 @@ const Header = () => {
     );
 }
 
-export default Header
+export default HeaderOfSite

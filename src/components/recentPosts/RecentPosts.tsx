@@ -19,7 +19,7 @@ interface recentPostMultiProps{
 }
 const sampleCard = (input: recentPostProps) =>{
     return(
-    <Card inverted>
+    <Card>
     <Image style={{filter:'grayscale(50%)'}} src={input.image} wrapped ui={false} />
     <Card.Content>
       <Card.Header>{input.header}</Card.Header>

@@ -49,7 +49,7 @@ export const IndexLedeblurb = (
             itemName: 'Connect',
             duration: 1200,
             animation: 'bounce',
-            url:'connect',
+            url:'/connect',
             icon: 'mail',
         }
   }

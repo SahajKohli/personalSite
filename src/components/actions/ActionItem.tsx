@@ -27,7 +27,7 @@ export const ActionItem = (props: ActionItemProps) => {
             duration={props.duration}
             visible={toggled}
           >
-                      <Button
+        <Button
         onMouseEnter={() => setToggle(false)}
         onMouseLeave={() => setToggle(true)}
          inverted circular icon={props.icon} />
