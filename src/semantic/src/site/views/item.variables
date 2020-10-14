@@ -4,3 +4,6 @@
 @headerColor: @white;
 @metaColor: @orange;
 @descriptionColor: @white;
+@imageBorder: @white;
+@borderRadius: 50%;
+@imageBorderRadius: 100%;

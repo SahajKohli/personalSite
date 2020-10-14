@@ -14,13 +14,13 @@ const DailiesApplicaitons = {
         {
             header: 'Notes', 
             type: 'Notion', 
-            image: 'https://prod-notion-assets.s3-us-west-2.amazonaws.com/front/apps/team/web/en-US.png' , 
+            image: 'https://upload.wikimedia.org/wikipedia/en/4/45/Notion_app_logo.png' , 
             description: <p>Pretty much the only way I stay organized.</p>,
         },
         {
             header: 'Calendar', 
             type: 'iCal', 
-            image: 'https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2018/08/Apple-Calendar.png?w=1500&quality=82&strip=all&ssl=1' , 
+            image: 'https://help.apple.com/assets/5E1912A2094622D13119F732/5E1912A5094622D13119F739/en_US/46c1924d468fba0321b8e4a8a1ed8098.png' , 
             description: <p>The default mail client sync everything so it works really well for me.</p>,
         },
         {
@@ -32,7 +32,7 @@ const DailiesApplicaitons = {
         {
             header: 'Secondary Browser', 
             type: 'Chrome', 
-            image: 'https://www.google.com/chrome/static/images/homepage/laptop_desktop.png' , 
+            image: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Chrome_icon_%28September_2014%29.svg' , 
             description: <p>Chrome dev tools and Lighthouse being built in is a no brainer for web devlopment.</p>,
         },
         {
@@ -52,13 +52,13 @@ const DailiesTerminalSetup ={
         {
             header: 'Terminal', 
             type: 'Bash', 
-            image: 'https://www.maketecheasier.com/assets/uploads/2019/07/Open-File-Terminal-Cover-800x400.jpg' , 
+            image: 'https://www.brandeps.com/logo-download/T/Terminal-logo-vector-01.svg' , 
             description: <p>I use the terminal on my mac, the move to zsh from Apple has made it easier to devlopment natively.</p>,
         },
         {
             header: 'Solarized Dark', 
             type: 'Terminal Font and Theme', 
-            image: 'https://st.suckless.org/patches/solarized/st-solarized-dark.png' , 
+            image: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Solarized_Yin_Yang_logo.png' , 
             description: <p>I love dark mode on all things and solarized is my favorite theme by far.</p>,
         },
         {
@@ -183,13 +183,13 @@ const DailiesHosting = {
         {
             header: 'Netlify', 
             type: 'Hosting', 
-            image: 'https://www.netlify.com/img/press/logos/full-logo-light.png' , 
+            image: 'https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco/ebruhshvba0wzbmnzhae' , 
             description: <p>Its so easy to link it up to the git repo and make it work that I always come back to it.</p>,
         },
         {
             header: 'Heroku', 
             type: 'Services Hosting', 
-            image: 'https://brand.heroku.com/static/media/heroku-logo-stroke.aa0b53be.svg' , 
+            image: 'https://dailysmarty-production.s3.amazonaws.com/uploads/post/img/509/feature_thumb_heroku-logo.jpg' , 
             description: <p>My favorite way to get my services up and running, the UI is great and CLI has great documentation.</p>,
         },
         {

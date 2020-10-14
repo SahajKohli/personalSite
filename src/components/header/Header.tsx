@@ -12,7 +12,7 @@ const HeaderOfSite = () => {
                 <GridRow  stretched>
 
                 </GridRow>
-                <Grid.Row >
+                <Grid.Row stretched>
                     <GridColumn width='3' verticalAlign='middle' textAlign='center'>
                         <Link to='/'>
                             <div style={{display:'inline-block'}}>
@@ -40,7 +40,7 @@ const HeaderOfSite = () => {
 
                     </GridColumn>
 
-                    <GridColumn width='6'></GridColumn>
+                    <GridColumn width='8'></GridColumn>
 
                     <GridColumn width='2'>
                         <Button inverted circular icon='github' href='https://github.com/SahajKohli' />
