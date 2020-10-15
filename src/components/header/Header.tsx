@@ -2,7 +2,7 @@ import React from 'react'
 import {Segment, Menu, Container, Button, Grid, GridColumn, GridRow, Icon} from 'semantic-ui-react'
  import {Link} from '@reach/router';
 const iconImage =  require("../../images/icon2.png");
-require( '../../semantic/dist/semantic.min.css');
+require( '../../styles/semantic.less');
 
 const HeaderOfSite = () => {
 

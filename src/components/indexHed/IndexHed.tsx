@@ -1,7 +1,7 @@
 import React from 'react'
 import {Image, Header, Grid, Divider, GridRow, GridColumn} from 'semantic-ui-react'
 import TextLoop from 'react-text-loop';
-require( '../../semantic/dist/semantic.min.css');
+require( '../../styles/semantic.less');
 
 const userImage =  require("../../images/me.png")
 
