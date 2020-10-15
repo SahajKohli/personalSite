@@ -1,5 +1,10 @@
 import React from 'react';
 
+export const resumePageConsts = {
+    heading: 'About Me:',
+    subheading: <p>Hi! Thanks for taking the time to take a look through my resume. I'm Senior Software Engineer with 3 years of fulltime Expirence. I've been working in the indsutry since 2017 (When I graduated). I've worked on Enterprise codebases and contributed to opensource code bases. </p>,
+}
+
 export const expConstants = {
     heading: 'Work Experience', 
     icon: 'computer', 
@@ -24,9 +29,9 @@ export const expConstants = {
             position: 'Software Engineer',
             company: 'Amazon Inc.',
             description: <p>Worked on both backend projects and frontend Ones. Created pages in Java Spring and rewrote Audible's Checkout Flow. Also worked on Library adn Wishlist at Audible. Then worked to redefine listening on web for Audible, created POC to move towards open-source tech and the implemented the architecture.  </p>,
-            image: 'http://iconicrealestate.com/wp-content/uploads/2018/03/amazon-logo.png',
+            image: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/012015/amazon-logo-rgb.png?itok=VaPUAQJF',
             location: 'Manhattan, NY',
-            date: 'Januarty 2017 - March 2019', 
+            date: 'January 2017 - March 2019', 
         },
         {
             position: 'Software Engineer Intern',
@@ -40,7 +45,7 @@ export const expConstants = {
             position: 'Software Engineer Intern',
             company: 'Johnson & Johnson',
             description: <p>Worked as a PMO intern in a Pharamaseutical subsidiary, to help make the workflow for project management orginzation more fluid.</p>,
-            image: 'https://images.techhive.com/images/article/2014/04/att-logo-100262596-large.jpg',
+            image: 'https://www.logotaglines.com/wp-content/uploads/2020/04/Johnson-Johnson-Logo.jpg',
             location: 'Manhattan, NY',
             date: 'January 2015 - June 2016', 
         },
@@ -52,8 +57,8 @@ export const eductionConstants = {
     icon: 'book', 
     items: [
         {
-            degreee: 'Computer Science & ITI',
-            college: 'Rutgers University',
+            position: 'Computer Science & ITI',
+            company: 'Rutgers University',
             description: <p>Double majored in computer science and ITI.</p>,
             image: 'https://scarletknights.com/images/2020/6/23/R_W_B_S.png',
             location: 'NJ',
@@ -99,13 +104,13 @@ export const intrestsConstants=  {
 //Skills, basically just links to images of the skills
 export const skillsProps = {
     links:[
-        'https://www.andreasreiterer.at/wp-content/uploads/2017/11/react-logo-825x510.jpg',
+        'https://mildaintrainings.com/wp-content/uploads/2017/11/react-logo.png',
         'https://www.flaticon.com/svg/static/icons/svg/121/121152.svg',
         'https://www.flaticon.com/svg/static/icons/svg/919/919853.svg',
-        'https://www.brandeps.com/logo-download/N/Node-JS-logo-vector-01.svg',
-        'https://www.vertica.com/wp-content/uploads/2019/07/Golang.png',
-        'https://www.brandeps.com/logo-download/M/MongoDB-logo-vector-01.svg',
-        'https://zdnet4.cbsistatic.com/hub/i/r/2018/04/19/092cbf81-acac-4f3a-91a1-5a26abc1721f/resize/370xauto/ce84e38cb1c1a7c5a2c9e4c337e108ba/postgresql-logo.png',
+        'https://www.techwell.com/sites/default/files/stories/images/cropped_teasers/Beth%20Romanik/2019/node-js-tutorial.png',
+        'https://blog.golang.org/go-brand/Go-Logo/PNG/Go-Logo_Blue.png',
+        'https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png',
+        'https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-110x117.png',
 
 
 

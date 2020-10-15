@@ -1,7 +1,7 @@
 import React from 'react';
 import {ExprienceItemProps} from '../Expirences/ExpirenceItem';
 import ExprienceItem from '../Expirences/ExpirenceItem';
-import {Grid, GridRow, GridColumn, Header, Icon} from 'semantic-ui-react';
+import {Grid, GridRow, GridColumn, Header, Icon, Divider} from 'semantic-ui-react';
 
 
 interface ExpirencesProps {
@@ -16,11 +16,12 @@ const Expirences = (props: ExpirencesProps) => {
             <Grid>
                 <GridRow stretched>
                     <GridColumn width='2'></GridColumn>
-                        <Header inverted as='h1'>
+                    <Header inverted as='h1'>
                             <Icon color='orange' name={props.icon}/>
                             {props.heading}                            
-                        </Header>
-                    <GridColumn width='12'>
+                    </Header>
+                    <GridColumn width='14'>
+                        <br/>
                         {props.items.map( (item) => {
                             
                             return(
@@ -29,6 +30,13 @@ const Expirences = (props: ExpirencesProps) => {
                         })}
                     </GridColumn>
 
+                    <GridColumn width='2'></GridColumn>
+                </GridRow>
+                <GridRow>
+                    <GridColumn width='2'></GridColumn>
+                    <GridColumn width='12'>
+                        <Divider inverted />
+                    </GridColumn>
                     <GridColumn width='2'></GridColumn>
                 </GridRow>
             </Grid>

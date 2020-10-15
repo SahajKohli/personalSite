@@ -62,6 +62,9 @@ const ExprienceItem =(props: ExprienceItemProps)=>{
                     </GridColumn>
                     <GridColumn width='2'></GridColumn>
                 </GridRow>
+                <GridRow>
+                    <br/>
+                </GridRow>
             </Grid>
         </div>
     )

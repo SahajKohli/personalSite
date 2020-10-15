@@ -20,18 +20,19 @@ const Intrests = (props: IntrestsProps) =>{
         <div className='expirence'>
             <Grid>
                 <GridRow stretched>
-                    <GridColumn width='2'></GridColumn>
-                        <Header inverted as='h1'>
+                    <GridColumn width='4'></GridColumn>
+                    <GridColumn width='8'>
+                    <Header inverted as='h1'>
                             <Icon color='orange' name={props.icon}/>
                             {props.heading}                            
                         </Header>
-                    <GridColumn width='12'>
                         <Item.Group>
                             {props.items.map((item) => {
                                 return (
                                     <Item>
                                         <Item.Content>
                                             <Item.Header as='a'>{item.heading}
+                                                <span>   </span>
                                                 <Icon color='orange' name={item.icon}/>
                                             </Item.Header>
                                             <Item.Description>

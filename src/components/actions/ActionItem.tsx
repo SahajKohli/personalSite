@@ -30,6 +30,7 @@ export const ActionItem = (props: ActionItemProps) => {
         <Button
         onMouseEnter={() => setToggle(false)}
         onMouseLeave={() => setToggle(true)}
+        href={props.url}
          inverted circular icon={props.icon} />
           </Transition>
 
