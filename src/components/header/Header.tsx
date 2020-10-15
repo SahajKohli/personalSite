@@ -1,7 +1,8 @@
 import React from 'react'
 import {Segment, Menu, Container, Button, Grid, GridColumn, GridRow, Icon} from 'semantic-ui-react'
  import {Link} from '@reach/router';
-const iconImage =  require("../../images/icon2.png")
+const iconImage =  require("../../images/icon2.png");
+import '../../semantic/dist/semantic.min.css';
 
 const HeaderOfSite = () => {
 
