@@ -15,11 +15,12 @@ const Skills = (props:SkillsProps) => {
             <Grid>
                 <GridRow stretched>
                     <GridColumn width ='2'></GridColumn>
+                    <GridColumn width='12'>
                     <Header inverted as='h1'>
                             <Icon color='orange' name={props.icon}/>
                             {props.heading}                            
                     </Header>
-                    <GridColumn width='12'>
+                    <br/>
                         <Grid  columns='equal'>
                             <GridRow stretched>
                                 {props.links.map( (item) => {

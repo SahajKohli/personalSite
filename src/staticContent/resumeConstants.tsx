@@ -1,5 +1,20 @@
 import React from 'react';
 
+//Images
+const bloomberg = require('../images/pages/bloomberglp.jpg')
+const wework = require('../images/pages/wework.jpg')
+const amazon = require('../images/pages/amazon.png')
+const att = require('../images/pages/att.jpg')
+const jnj = require('../images/pages/jnj.jpg')
+const rutgers = require('../images/pages/rutgers.png')
+const react = require('../images/pages/react.png')
+const java = require('../images/pages/java.svg')
+const docker = require('../images/pages/docker.svg')
+const node = require('../images/pages/nodejs.png')
+const go = require('../images/pages/go.png')
+const mongo = require('../images/pages/mongo.png')
+const postgres = require('../images/pages/postgres.png')
+
 export const resumePageConsts = {
     heading: 'About Me:',
     subheading: <p>Hi! Thanks for taking the time to take a look through my resume. I'm Senior Software Engineer with 3 years of fulltime Expirence. I've been working in the indsutry since 2017 (When I graduated). I've worked on Enterprise codebases and contributed to opensource code bases. </p>,
@@ -13,15 +28,15 @@ export const expConstants = {
             position: 'Senior Software Engineer',
             company: 'Bloomberg LLC',
             description: <p>Joined as a Senior Software Engineer</p>,
-            image: 'https://www.greenamerica.org/sites/default/files/styles/wide350/public/2017-05/bloomberglp.jpg',
+            image: bloomberg,
             location: 'Manhattan, NY',
-            date: 'March 2019 - September 2020', 
+            date: 'September 2020 - Ciur', 
         },
         {
             position: 'Software Engineer',
             company: 'We Company',
             description: <p>Created new services in GO, also created new expirences in ReactJS. Created new workflow and helped define CD/CI for web.</p>,
-            image: 'https://connectedremag.com/wp-content/uploads/2018/06/wework.jpg',
+            image: wework,
             location: 'Manhattan, NY',
             date: 'March 2019 - September 2020', 
         },
@@ -29,7 +44,7 @@ export const expConstants = {
             position: 'Software Engineer',
             company: 'Amazon Inc.',
             description: <p>Worked on both backend projects and frontend Ones. Created pages in Java Spring and rewrote Audible's Checkout Flow. Also worked on Library adn Wishlist at Audible. Then worked to redefine listening on web for Audible, created POC to move towards open-source tech and the implemented the architecture.  </p>,
-            image: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/012015/amazon-logo-rgb.png?itok=VaPUAQJF',
+            image: amazon,
             location: 'Manhattan, NY',
             date: 'January 2017 - March 2019', 
         },
@@ -37,7 +52,7 @@ export const expConstants = {
             position: 'Software Engineer Intern',
             company: 'AT&T',
             description: <p>Helped create program to run sentimental analysis using in house NLP. Worked on Nano-Cube Data Structure.</p>,
-            image: 'https://images.techhive.com/images/article/2014/04/att-logo-100262596-large.jpg',
+            image: att,
             location: 'Manhattan, NY',
             date: 'September 2016 - January 2017', 
         },
@@ -45,7 +60,7 @@ export const expConstants = {
             position: 'Software Engineer Intern',
             company: 'Johnson & Johnson',
             description: <p>Worked as a PMO intern in a Pharamaseutical subsidiary, to help make the workflow for project management orginzation more fluid.</p>,
-            image: 'https://www.logotaglines.com/wp-content/uploads/2020/04/Johnson-Johnson-Logo.jpg',
+            image: jnj,
             location: 'Manhattan, NY',
             date: 'January 2015 - June 2016', 
         },
@@ -60,7 +75,7 @@ export const eductionConstants = {
             position: 'Computer Science & ITI',
             company: 'Rutgers University',
             description: <p>Double majored in computer science and ITI.</p>,
-            image: 'https://scarletknights.com/images/2020/6/23/R_W_B_S.png',
+            image: rutgers,
             location: 'NJ',
             date: 'September 2012 - January 2017', 
         },
@@ -104,13 +119,13 @@ export const intrestsConstants=  {
 //Skills, basically just links to images of the skills
 export const skillsProps = {
     links:[
-        'https://mildaintrainings.com/wp-content/uploads/2017/11/react-logo.png',
-        'https://www.flaticon.com/svg/static/icons/svg/121/121152.svg',
-        'https://www.flaticon.com/svg/static/icons/svg/919/919853.svg',
-        'https://www.techwell.com/sites/default/files/stories/images/cropped_teasers/Beth%20Romanik/2019/node-js-tutorial.png',
-        'https://blog.golang.org/go-brand/Go-Logo/PNG/Go-Logo_Blue.png',
-        'https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png',
-        'https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-110x117.png',
+        react,
+        java,
+        docker,
+        node,
+        go,
+        mongo,
+        postgres,
 
     ],
     icon:'code',

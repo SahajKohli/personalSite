@@ -1,7 +1,7 @@
 import React from 'react'
 import {Segment, Menu, Container, Button, Grid, GridColumn, GridRow, Icon} from 'semantic-ui-react'
  import {Link} from '@reach/router';
-const iconImage =  require("../../images/icon2.png");
+const iconImage =  require("../../images/icon.png");
 require( '../../semantic/dist/semantic.min.css');
 
 const HeaderOfSite = () => {
@@ -48,13 +48,13 @@ const HeaderOfSite = () => {
 
                     <GridColumn width='3'>
                         <Button.Group >
-                            <Button inverted>
+                            <Button inverted href='/resume'>
                                 <Link className='headerNav'to='/resume'>About</Link>
                             </Button>
-                            <Button inverted>
+                            <Button inverted href='/dailies'>
                                 <Link className='headerNav' to='/dailies'>Daily</Link>
                             </Button>
-                            <Button inverted>
+                            <Button inverted href='/connect'>
                                 <Link className='headerNav' to='/connect'>Contact</Link>
                             </Button>
                         </Button.Group>
