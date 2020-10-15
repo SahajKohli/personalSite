@@ -3,6 +3,7 @@ import {Grid, GridColumn, GridRow, Item, Icon, Header, ItemDescription} from 'se
 
 interface InterestItem{
     heading: string;
+    icon: string;
     description: JSX.Element,
 }
 
@@ -30,7 +31,9 @@ const Intrests = (props: IntrestsProps) =>{
                                 return (
                                     <Item>
                                         <Item.Content>
-                                            <Item.Header as='a'>{item.heading}</Item.Header>
+                                            <Item.Header as='a'>{item.heading}
+                                                <Icon color='orange' name={item.icon}/>
+                                            </Item.Header>
                                             <Item.Description>
                                                 {item.description}
                                             </Item.Description>
