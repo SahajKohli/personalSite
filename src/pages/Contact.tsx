@@ -9,7 +9,7 @@ import {contactMeConstants} from '../staticContent/contactMeConstants';
                 <GridRow stretched>
                     <GridColumn width='2'></GridColumn>
                     <GridColumn width='5' textAlign='center'>
-                        <Icon color ='orange' name={contactMeConstants.icon} size='massive'/>
+                        <img src='https://media.giphy.com/media/byA7UVvcIQvAppjRNY/giphy.gif'/>
                     </GridColumn>
                     <GridColumn width='6'>
                         <Header as='h1' color='orange'>{contactMeConstants.heading}</Header>
