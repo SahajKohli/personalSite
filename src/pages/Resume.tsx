@@ -3,7 +3,7 @@ import {Header, Divider, Grid, Image } from 'semantic-ui-react';
 import Expirences from '../components/Expirences/Expirences';
 import Skills from '../components/Skills/Skills';
 import Intrests from '../components/Interests/Interests';
-import userImage from '../images/me.png';
+const userImage =  require("../images/me.png");
 import {intrestsConstants, eductionConstants, expConstants, skillsProps, resumePageConsts} from '../staticContent/resumeConstants';
 
 
@@ -38,7 +38,7 @@ import {intrestsConstants, eductionConstants, expConstants, skillsProps, resumeP
 
             <Expirences heading={expConstants.heading} icon={expConstants.icon} items={expConstants.items}/>
             <Expirences heading={eductionConstants.heading} icon={eductionConstants.icon} items={eductionConstants.items}/>
-            <Skills links={skillsProps.links}/>
+            <Skills links={skillsProps.links} icon={skillsProps.icon} heading={skillsProps.heading}/>
             <Intrests heading={intrestsConstants.heading} icon={intrestsConstants.icon} items={intrestsConstants.items}/>
         </div>
     )

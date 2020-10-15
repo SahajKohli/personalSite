@@ -112,9 +112,8 @@ export const skillsProps = {
         'https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png',
         'https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-110x117.png',
 
-
-
-
-    ]
+    ],
+    icon:'code',
+    heading:'Skills',
 }
 

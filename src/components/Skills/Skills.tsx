@@ -4,7 +4,7 @@ import {Header, Item, Grid, GridRow, GridColumn, Divider, Icon} from 'semantic-u
 
 interface SkillsProps{
     heading: string,
-    ison: string,
+    icon: string,
     links:string[]
 }
 
