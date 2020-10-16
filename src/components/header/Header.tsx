@@ -48,15 +48,9 @@ const HeaderOfSite = () => {
 
                     <GridColumn width='3'>
                         <Button.Group >
-                            <Button inverted href='/resume'>
-                                <Link className='headerNav'to='/resume'>About</Link>
-                            </Button>
-                            <Button inverted href='/dailies'>
-                                <Link className='headerNav' to='/dailies'>Daily</Link>
-                            </Button>
-                            <Button inverted href='/connect'>
-                                <Link className='headerNav' to='/connect'>Contact</Link>
-                            </Button>
+                            <Link className='headerNav'to='/resume'><Button inverted>About</Button></Link>
+                            <Link className='headerNav' to='/dailies'><Button inverted >Daily</Button></Link>
+                            <Link className='headerNav' to='/connect'><Button inverted >Contact</Button></Link>
                         </Button.Group>
                     </GridColumn>
 
