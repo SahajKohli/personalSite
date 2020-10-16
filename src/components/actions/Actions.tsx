@@ -1,6 +1,7 @@
 import React from 'react';
 import {Divider, Grid, GridRow, GridColumn, Header} from 'semantic-ui-react'
 import {ActionItem} from '../actions/ActionItem'
+import { SemanticICONS } from 'semantic-ui-react/dist/commonjs/generic';
 
 interface ActionsProps {
     actionItem1: {
@@ -8,21 +9,21 @@ interface ActionsProps {
         duration: number;
         animation: string;
         url: string;
-        icon: string;
+        icon: SemanticICONS;
     }
     actionItem2: {
         itemName: string;
         duration: number;
         animation: string;
         url: string;
-        icon: string;
+        icon: SemanticICONS;
     }
     actionItem3: {
         itemName: string;
         duration: number;
         animation: string;
         url: string;
-        icon: string;
+        icon: SemanticICONS;
     }
 }
 

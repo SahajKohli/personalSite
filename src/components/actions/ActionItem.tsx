@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Transition, Button} from 'semantic-ui-react'
+import {Transition, Button, SemanticICONS} from 'semantic-ui-react'
 import '../../styles/ActionItem.css';
 import {Link} from '@reach/router';
 
@@ -9,7 +9,7 @@ interface ActionItemProps {
     duration: number;
     animation: string;
     url:string;
-    icon:string
+    icon:SemanticICONS;
 }
 
 export const ActionItem = (props: ActionItemProps) => {
@@ -27,11 +27,15 @@ export const ActionItem = (props: ActionItemProps) => {
             duration={props.duration}
             visible={toggled}
           >
-        <Button
-        onMouseEnter={() => setToggle(false)}
-        onMouseLeave={() => setToggle(true)}
-        href={props.url}
-         inverted circular icon={props.icon} />
+          <Link className={className}  to={props.url}>
+              <Button
+                onMouseEnter={() => setToggle(false)}
+                onMouseLeave={() => setToggle(true)}
+                href={props.url}
+                inverted circular 
+                icon={props.icon} 
+              />
+          </Link>
           </Transition>
 
         <Transition
