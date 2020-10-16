@@ -65,7 +65,7 @@ export const IndexLedeblurb = (
   export const multicards = {
       card1:{
         image: facialRecog,
-        header: 'Gatsby Facial Recognization',
+        heading: 'Gatsby Facial Recognization',
         metaData: '08/03/2020',
         description: <p>A Gatsby site that allows users to upload a picture and see how closely they are to looking like Will Ferrel </p>,
         link: 'https://github.com/SahajKohli/Facial-Recognition-ML-Gatsby/tree/master/facial-recog',
@@ -74,7 +74,7 @@ export const IndexLedeblurb = (
       },
       card2:{
         image: data,
-        header: 'Daily Algoryhtm Site',
+        heading: 'Daily Algoryhtm Site',
         metaData: '9/13/2020',
         description: <p>A site I created to bascially post data structure questions daily and their solutions</p>,
         link: 'https://sahajkohli.github.io/dailyQuestion/',
@@ -83,7 +83,7 @@ export const IndexLedeblurb = (
       },
       card3:{
         image: onepicturesample,
-        header: 'Pictogram',
+        heading: 'Pictogram',
         metaData: '10/03/2020',
         description: <p>A gallery that allows you to scroll over images and shows metadata</p>,
         link: 'https://github.com/SahajKohli/Pictogram',

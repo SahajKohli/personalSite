@@ -19,3 +19,7 @@ body {
     font-weight: bold;
     animation: jiggle 500ms;
 }
+
+.card {
+    text-align: center;
+}
