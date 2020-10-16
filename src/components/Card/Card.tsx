@@ -17,23 +17,25 @@ export interface CardProps{
 const Card =(props: CardProps) => {
 
     return (
-        <div className='card'>
-            <img className='image' src ={props.image} />
+        <a href={props.link}>
+            <div className='card' >
+                <img className='image' src ={props.image} />
 
-            <div className='data'>
-                <div className='heading'>{props.heading}</div>
-                <div className='metadata'>{props.metaData}</div>
-                <div className='description'>{props.description}</div>
-                <br/>
-                <div className='bottom'>
-                    <a href={props.link} className='link'>
-                        <Icon name ={props.icon}/>
-                        {props.linkDec}
-                    </a>
+                <div className='data'>
+                    <div className='heading'>{props.heading}</div>
+                    <div className='metadata'>{props.metaData}</div>
+                    <div className='description'>{props.description}</div>
+                    <br/>
+                    <div className='bottom'>
+                        <a href={props.link} className='link'>
+                            <Icon name ={props.icon}/>
+                            {props.linkDec}
+                        </a>
+                    </div>
                 </div>
             </div>
+        </a>
 
-        </div>
     )
 
 }
