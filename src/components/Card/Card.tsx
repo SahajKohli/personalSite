@@ -19,7 +19,7 @@ const Card =(props: CardProps) => {
     return (
         <a href={props.link}>
             <div className='card' >
-                <img className='image' src ={props.image} />
+                <img className='cardImage' src ={props.image} />
 
                 <div className='data'>
                     <div className='heading'>{props.heading}</div>

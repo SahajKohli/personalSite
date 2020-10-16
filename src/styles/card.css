@@ -10,11 +10,11 @@
 
 }
 
-.image:hover {
+.cardImage:hover {
     animation: pulse 500ms;
 }
 
-.image {
+.cardImage {
     padding-bottom: 0px;
     border-bottom: darkgray;
     border-radius: 10%;
