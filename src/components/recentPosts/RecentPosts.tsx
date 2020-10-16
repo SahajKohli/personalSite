@@ -8,7 +8,7 @@ interface recentPostProps{
     metaData: string,
     description: JSX.Element,
     link: string,
-    icon: string,
+    icon: SemanticICONS,
     linkDec: string,
 }
 
@@ -45,7 +45,7 @@ const RecentPosts = (props: recentPostMultiProps) => {
         <div>
             <br/>
 
-            <Grid>
+            <Grid stackable>
                 <GridRow stretched>
                     <GridColumn width ='7'>
                         <Header inverted as='h1' textAlign='left'>

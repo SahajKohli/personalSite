@@ -1,0 +1,11 @@
+.headerButtonfalse {
+    color: grey;
+    font-size: x-large;
+}
+
+.headerButtontrue {
+    text-decoration: underline orange;
+    font-size: x-large;
+    font-weight: bold;
+
+}
