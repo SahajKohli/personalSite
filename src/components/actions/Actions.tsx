@@ -31,13 +31,13 @@ const Actions = (props: ActionsProps) => {
 
     return (
         <div>
-        <Grid>
+        <Grid stackable>
         <GridRow>
             <GridColumn width='2'>
             </GridColumn>
 
             <GridColumn width='12' >
-            <Grid>
+            <Grid stackable>
                    <GridRow>
                        <GridColumn width='5' textAlign='center' >
                             <ActionItem itemName={props.actionItem1.itemName} duration= {props.actionItem1.duration} animation={props.actionItem1.animation} url={props.actionItem1.url} icon={props.actionItem1.icon}/>

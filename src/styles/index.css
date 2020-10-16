@@ -8,10 +8,14 @@ body {
     margin: 0px;
 }
 
-.headerNav {
-    color: white;
+.headerIcon:hover {
+    color: rgb(242, 113, 28);
+    font-weight: bold;
+    animation: jiggle 500ms;
 }
 
-.headerNav:hover {
-    color: black;
+.headerIconText:hover {
+    color: rgb(242, 113, 28);
+    font-weight: bold;
+    animation: jiggle 500ms;
 }

@@ -1,71 +1,32 @@
 import React from 'react'
-import {Segment, Menu, Container, Button, Grid, GridColumn, GridRow, Icon} from 'semantic-ui-react'
- import {Link} from '@reach/router';
+import {Segment, Menu, Container, Grid, GridColumn, GridRow, Icon} from 'semantic-ui-react'
+import {Link} from '@reach/router';
+import HeaderButton from '../header/HeaderButton';
 const iconImage =  require("../../images/icon.png");
 require( '../../semantic/dist/semantic.min.css');
 
 const HeaderOfSite = () => {
 
     return (
-        <div>
-            <Grid inverted>
-                <GridRow  stretched>
-
+            <Grid stackable verticalAlign='middle' color='black'>
+                <GridRow>
                 </GridRow>
-                <Grid.Row stretched>
-                    <GridColumn width='3' verticalAlign='middle' textAlign='center'>
-                        <Link to='/'>
-                            <div style={{display:'inline-block'}}>
-                                <img src={iconImage} style={{
-                                    borderRadius: '100%',
-                                    width:'40px',
-                                    height:'40px',
-                                    backgroundColor: "orange",
-                                    float: 'left',
-                                }}></img>
-                                <div
-                                style={{
-                                    float: 'right',
-                                    verticalAlign:'middle',
-                                    textAlign:'right',
-                                    paddingLeft: '10px',
-                                    paddingTop:'10px',
-                                    color: 'grey',
-                                    fontWeight:'bold',
-                                    fontFamily: 'unset',
-                                }}
-                                >Sahaj Kohli</div>
-                            </div>
-                        </Link>
-
+                <GridRow textAlign='center'>
+                    <GridColumn width ='3'>
+                        <Link to='/' style={{color:"grey", fontSize:'medium', verticalAlign:'top', textAlign:'center'}}><img  className='headerIcon'src={iconImage}/> <div className='headerIconText'>Sahaj Kohli</div></Link>
                     </GridColumn>
-
-                    <GridColumn width='8'></GridColumn>
-
-                    <GridColumn width='2'>
-                        <Button inverted circular icon='github' href='https://github.com/SahajKohli' />
+                    <GridColumn width ='7'></GridColumn>
+                    <GridColumn width ='2'>
+                        <HeaderButton link='/resume' text='About'/>
                     </GridColumn>
-
-                    <GridColumn width='3'>
-                        <Button.Group >
-                            <Link className='headerNav'to='/resume'><Button inverted>About</Button></Link>
-                            <Link className='headerNav' to='/dailies'><Button inverted >Daily</Button></Link>
-                            <Link className='headerNav' to='/connect'><Button inverted >Contact</Button></Link>
-                        </Button.Group>
+                    <GridColumn width ='2'>
+                        <HeaderButton link='/connect' text='Contact'/>
                     </GridColumn>
-
-                </Grid.Row>
-                <Grid.Row>
-
-                </Grid.Row>
-                <Grid.Row>
-                    
-                    </Grid.Row>
-                    <Grid.Row>
-                    
-                    </Grid.Row>
+                    <GridColumn width ='2'>
+                        <HeaderButton link='/dailies' text='Daily'/>
+                    </GridColumn>
+                </GridRow>
             </Grid>
-        </div>    
     );
 }
 

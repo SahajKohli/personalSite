@@ -21,7 +21,7 @@ interface IndexHedProps{
 const IndexHed = (props: IndexHedProps) => {
     return (
         <div>
-            <Grid inverted>
+            <Grid inverted stackable>
                     <Grid.Row stretched>
                         <Grid.Column width={4}>
                         </Grid.Column>
@@ -36,6 +36,7 @@ const IndexHed = (props: IndexHedProps) => {
                             </Grid.Row>
                             <Grid.Row>
                                 <Header inverted as='h1'>{props.lede}</Header>
+                                
                             </Grid.Row>
                         </Grid.Column>
                         <Grid.Column width={4}>
@@ -51,7 +52,6 @@ const IndexHed = (props: IndexHedProps) => {
 
                         <Grid.Column width={5} textAlign='right'>
                             <Header inverted as='h2'>{props.secondLede}</Header> 
-                            <div> h </div>
                         </Grid.Column>
 
                         <Grid.Column width={5} floated='right' className='removePadding'>
