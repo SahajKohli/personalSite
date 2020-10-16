@@ -4,7 +4,6 @@ import {Header} from 'semantic-ui-react';
 import {DailiesProps} from '../staticContent/dailiesConstants'
 
  const Dailies = () => {
-     console.log("Dailies loaded");
     return (
         <div>  
             <div style={{textAlign:'center'}}>
@@ -13,7 +12,6 @@ import {DailiesProps} from '../staticContent/dailiesConstants'
             </div>
             {DailiesProps.dailies.map( (item) =>
                 {
-                    console.log(item);
                     return (<ListItem header={item.header} icon={item.icon} subHeading={item.subHeading} items={item.items}/>);
                 }
             )}

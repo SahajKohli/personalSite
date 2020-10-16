@@ -1,5 +1,6 @@
 import React from 'react';
 import {Header, Grid, GridColumn, GridRow, Item, Icon, Divider} from 'semantic-ui-react';
+import { SemanticICONS } from 'semantic-ui-react/dist/commonjs/generic';
 
 type SingleListItemProps = {
     header: string, 
@@ -10,7 +11,7 @@ type SingleListItemProps = {
 
 type ListOfItemsProps = {
     header:string,
-    icon: string,
+    icon: SemanticICONS,
     subHeading: string;
     items: SingleListItemProps[]
 }
@@ -35,7 +36,6 @@ export const ListItem = (props: ListOfItemsProps) => {
                         <Item.Group divided>
                             {props.items.map(
                                 (item) => {
-                                    console.log('hello')
                                     return(
                                         <Item>
                                             <Item.Image size='small' src={item.image} />
