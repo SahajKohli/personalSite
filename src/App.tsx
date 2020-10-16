@@ -9,9 +9,12 @@ import Dailies from './pages/Dailies';
 import Resume from './pages/Resume';
 
 import './styles/index.css';
-const RouterPage = (
-    props: { pageComponent: JSX.Element } & RouteComponentProps
-  ) => props.pageComponent;
+
+let HomePage = (props: RouteComponentProps) => <Main/>
+let ResumePage = (props: RouteComponentProps) => <Resume/>
+let DailiesPage = (props: RouteComponentProps) => <Dailies/>
+let ContactPage = (props: RouteComponentProps) => <Contact/>
+
 
 const App = () =>  {
     console.log("Loading...")
@@ -19,10 +22,10 @@ const App = () =>  {
         <div>
         <HeaderOfSite/>
         <Router>
-            <RouterPage path='/' pageComponent={<Main/>} />
-            <RouterPage path='/resume' pageComponent={<Resume/>} />
-            <RouterPage path='/dailies' pageComponent={<Dailies/>} />
-            <RouterPage path='/connect' pageComponent={<Contact/>} />
+            <HomePage path='/' />
+            <ResumePage path='/resume' />
+            <DailiesPage path='/dailies' />
+            <ContactPage path='/connect' />
         </Router>
         <Footer/>
         </div>
