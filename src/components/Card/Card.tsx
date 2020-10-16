@@ -26,10 +26,10 @@ const Card =(props: CardProps) => {
                 <div className='description'>{props.description}</div>
                 <br/>
                 <div className='bottom'>
-                    <Link to={props.link} className='link'>
+                    <a href={props.link} className='link'>
                         <Icon name ={props.icon}/>
                         {props.linkDec}
-                    </Link>
+                    </a>
                 </div>
             </div>
 
