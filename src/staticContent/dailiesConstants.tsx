@@ -1,4 +1,6 @@
 import React from 'react';
+import { SemanticICONS } from 'semantic-ui-react/dist/commonjs/generic';
+
 
 //images
 const spark = require('../images/pages/spark.svg')
@@ -27,9 +29,17 @@ const ipad = require('../images/pages/ipad.jpg')
 const pencil = require('../images/pages/pencil.jpeg')
 const sketch = require('../images/pages/sketch.png')
 
+//icons
+let appstore: SemanticICONS = 'app store';
+let terminalIcon: SemanticICONS = 'terminal';
+let cameraRetro: SemanticICONS = 'camera retro';
+let cloud: SemanticICONS = 'cloud';
+let desktop: SemanticICONS = 'desktop'
+let pencilIcon: SemanticICONS ='pencil alternate'
+
 const DailiesApplicaitons = {
     header: 'Applications',
-    icon: 'app store',
+    icon: appstore,
     subHeading: 'My setup of Applications I use Daily',
     items:[
         {
@@ -73,7 +83,7 @@ const DailiesApplicaitons = {
 }
 const DailiesTerminalSetup ={
     header: 'Terminal and Editors',
-    icon: 'terminal',
+    icon: terminalIcon,
     subHeading: 'My custom Terminal Setup',
     items:[
         {
@@ -98,7 +108,7 @@ const DailiesTerminalSetup ={
 }
 const DailiesWorkStation = {
     header: 'Work Station',
-    icon: 'desktop',
+    icon: desktop,
     subHeading: 'What my work station looks like',
     items:[
         {
@@ -147,7 +157,7 @@ const DailiesWorkStation = {
 }
 const DailiesPhotoGraphy = {
     header: 'Photographhy Dailies',
-    icon: 'camera retro',
+    icon: cameraRetro,
     subHeading: 'My camera and Assc.',
     items:[
         {
@@ -173,7 +183,7 @@ const DailiesPhotoGraphy = {
 }
 const DailiesDrawing = {
     header: 'Drawing Stuff',
-    icon: 'pencil alternate',
+    icon: pencilIcon,
     subHeading: 'What I use to draw',
     items:[
         {
@@ -198,7 +208,7 @@ const DailiesDrawing = {
 }
 const DailiesHosting = {
     header: 'Hosting',
-    icon: 'cloud',
+    icon: cloud,
     subHeading: 'How I host and deploy my code',
     items:[
         {

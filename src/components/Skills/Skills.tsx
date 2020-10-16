@@ -1,10 +1,11 @@
 import React from 'react';
 import {Header, Item, Grid, GridRow, GridColumn, Divider, Icon} from 'semantic-ui-react';
+import { SemanticICONS } from 'semantic-ui-react/dist/commonjs/generic';
 
 
 interface SkillsProps{
     heading: string,
-    icon: string,
+    icon: SemanticICONS,
     links:string[]
 }
 

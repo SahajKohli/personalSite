@@ -1,15 +1,16 @@
 import React from 'react';
 import {Grid, GridColumn, GridRow, Item, Icon, Header, ItemDescription} from 'semantic-ui-react';
+import { SemanticICONS } from 'semantic-ui-react/dist/commonjs/generic';
 
 interface InterestItem{
     heading: string;
-    icon: string;
+    icon: SemanticICONS;
     description: JSX.Element,
 }
 
 interface IntrestsProps {
     heading: string;
-    icon: string;
+    icon: SemanticICONS;
     items: InterestItem[],
 }
 

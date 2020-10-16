@@ -2,11 +2,12 @@ import React from 'react';
 import {ExprienceItemProps} from '../Expirences/ExpirenceItem';
 import ExprienceItem from '../Expirences/ExpirenceItem';
 import {Grid, GridRow, GridColumn, Header, Icon, Divider} from 'semantic-ui-react';
+import { SemanticICONS } from 'semantic-ui-react/dist/commonjs/generic';
 
 
 interface ExpirencesProps {
     heading: string, 
-    icon: string, 
+    icon: SemanticICONS, 
     items: ExprienceItemProps[]
 }
 

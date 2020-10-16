@@ -1,4 +1,5 @@
 import React from 'react';
+import { SemanticICONS } from 'semantic-ui-react/dist/commonjs/generic';
 
 //Images
 const bloomberg = require('../images/pages/bloomberglp.jpg')
@@ -15,14 +16,29 @@ const go = require('../images/pages/go.png')
 const mongo = require('../images/pages/mongo.png')
 const postgres = require('../images/pages/postgres.png')
 
+//icons
+let code: SemanticICONS = 'code';
+let microchip: SemanticICONS = 'microchip';
+let suitcase: SemanticICONS = 'suitcase';
+let map: SemanticICONS = 'map';
+let camera: SemanticICONS = 'camera';
+let computer: SemanticICONS = 'camera';
+let book: SemanticICONS = 'camera';
+let beer: SemanticICONS = 'beer';
+
+
 export const resumePageConsts = {
     heading: 'About Me:',
     subheading: <p>Hi! Thanks for taking the time to take a look through my resume. I'm Senior Software Engineer with 3 years of fulltime Expirence. I've been working in the indsutry since 2017 (When I graduated). I've worked on Enterprise codebases and contributed to opensource code bases. </p>,
 }
+ 
+
+
+
 
 export const expConstants = {
     heading: 'Work Experience', 
-    icon: 'computer', 
+    icon: computer, 
     items: [
         {
             position: 'Senior Software Engineer',
@@ -69,7 +85,7 @@ export const expConstants = {
 
 export const eductionConstants = {
     heading: 'Education', 
-    icon: 'book', 
+    icon: book, 
     items: [
         {
             position: 'Computer Science & ITI',
@@ -84,33 +100,36 @@ export const eductionConstants = {
 
 
 
+
+
+
 export const intrestsConstants=  {
     heading: 'My Intrests and Hobbies',
-    icon: 'beer',
+    icon: beer,
     items: [
         {
             heading: 'Coding',
-            icon:'code',
+            icon:  code,
             description: <p>I love trying to learn new things in our industry, I try to pick up on new languages and new tech whenver I can. I attend virtual conferences to stay ahead of the market and the industry of new trends all the time.</p>,
         },
         {
             heading: 'Technology',
-            icon:'microchip',
+            icon: microchip,
             description: <p>From the latest ARM chip to the newest iPhone, I love and follow all things tech. I also love reading about how technology is chaning humans and influencing our society.</p>,
         },
         {
             heading: 'Travel',
-            icon:'suitcase',
+            icon: suitcase,
             description: <p>I love traveling to differnet places and trying to see new sights. I look forward to it every year. </p>,
         },
         {
             heading: 'Hiking',
-            icon:'map',
+            icon: map,
             description: <p>I love a good trail or mountain.</p>,
         },
         {
             heading: 'Photography',
-            icon:'camera',
+            icon: camera,
             description: <p>I'm a amateur and am still learning, trying to get better at it.</p>,
         },
     ]
@@ -128,7 +147,7 @@ export const skillsProps = {
         postgres,
 
     ],
-    icon:'code',
+    icon: code,
     heading:'Skills',
 }
 
