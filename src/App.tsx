@@ -8,6 +8,8 @@ import Contact from './pages/Contact';
 import Dailies from './pages/Dailies';
 import Resume from './pages/Resume';
 import BadPath from './pages/404';
+import Blogpost from './pages/Blogpost';
+import Blog from './pages/Blog'
 import './styles/index.css';
 
 let HomePage = (props: RouteComponentProps) => <Main/>
@@ -15,6 +17,8 @@ let ResumePage = (props: RouteComponentProps) => <Resume/>
 let DailiesPage = (props: RouteComponentProps) => <Dailies/>
 let ContactPage = (props: RouteComponentProps) => <Contact/>
 let DefaultPage = (props:RouteComponentProps) => <BadPath/>
+let BlogPage = (props:RouteComponentProps) => <Blog/>
+let BlogPostPage = (props:RouteComponentProps) => <Blogpost/>
 
 const App = () =>  {
     console.log("Loading...")
@@ -26,6 +30,9 @@ const App = () =>  {
             <ResumePage path='/resume' />
             <DailiesPage path='/dailies' />
             <ContactPage path='/connect' />
+            <BlogPage path='/blog' />
+            <BlogPostPage path='/blogpost:slug'/>
+
             <DefaultPage default />
         </Router>
         <Footer/>
