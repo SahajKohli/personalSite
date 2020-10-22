@@ -40,7 +40,12 @@ export default {
     {
       name: 'publishedAt',
       title: 'Published at',
-      type: 'datetime'
+      type: 'date'
+    },
+    {
+      title: 'Description',
+      name: 'shortDesc',
+      type: 'text'
     },
     {
       name: 'body',

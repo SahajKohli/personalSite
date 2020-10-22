@@ -10,6 +10,7 @@ import Resume from './pages/Resume';
 import BadPath from './pages/404';
 import Blogpost from './pages/Blogpost';
 import Blog from './pages/Blog'
+import OnePost from './pages/OnePost'
 import './styles/index.css';
 
 let HomePage = (props: RouteComponentProps) => <Main/>
@@ -18,7 +19,8 @@ let DailiesPage = (props: RouteComponentProps) => <Dailies/>
 let ContactPage = (props: RouteComponentProps) => <Contact/>
 let DefaultPage = (props:RouteComponentProps) => <BadPath/>
 let BlogPage = (props:RouteComponentProps) => <Blog/>
-let BlogPostPage = (props:RouteComponentProps) => <Blogpost/>
+let OnePostPage = (props: RouteComponentProps) => <OnePost slugID={props.uri} />
+let BlogPostPage = (props:RouteComponentProps) => <Blogpost slugID={props.uri}/>
 
 const App = () =>  {
     console.log("Loading...")
@@ -31,7 +33,8 @@ const App = () =>  {
             <DailiesPage path='/dailies' />
             <ContactPage path='/connect' />
             <BlogPage path='/blog' />
-            <BlogPostPage path='/blogpost:slug'/>
+            <BlogPostPage path="/blogpost/:slugID"/>
+
 
             <DefaultPage default />
         </Router>

@@ -1,16 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import sanityClient from "../api/sanityClient";
+import { Dimmer, Loader, Image, Segment , Grid, GridColumn, GridRow, ItemDescription} from 'semantic-ui-react'
 import {Link} from '@reach/router'
+import BlogTile from '../components/blogTile/BlogTile';
 
 export default function Blog() {
     const [allPostsData, setAllPosts] = useState(null);
- 
    useEffect(() => {
      sanityClient
        .fetch(
          `*[_type == "post"]{
          title,
          slug,
+         "name": author->name,
+         "date": publishedAt,
+         shortDesc,
          mainImage{
            asset->{
            _id,
@@ -22,33 +26,36 @@ export default function Blog() {
        .then((data) => setAllPosts(data))
        .catch(console.error);
    }, []);
-   console.log(allPostsData);
+    
+   
 
-   if(!allPostsData){
-       console.log("null");
-       return (<div style={{color: 'gray'}}>
-           Nothing to see
-       </div>)
+   if (!allPostsData) {
+       return (
+            <Dimmer active>
+            <Loader>Hacking the MainFrame.....</Loader>
+            </Dimmer>
+       )
    } else{
-    return(
+    return (
         <div>
         <h2>Blog Posts</h2>
         <h3>Welcome to my blog posts page!</h3>
         <div>
-          {allPostsData &&
-            allPostsData.map((post, index) => (
-              <Link to={"/" + post.slug.current} key={post.slug.current}>
-                <span key={index}>
-                  <img src={post.mainImage.asset.url} alt="" />
-                  <span>
-                    <h2>{post.title}</h2>
-                  </span>
-                </span>
-              </Link>
-            ))}
+            <Grid stackable  columns={3}>
+            <GridRow >
+                {allPostsData &&
+          allPostsData.map((post, index) => (
+              <GridColumn>
+                  <BlogTile  link={"/" + post.slug.current} image={post.mainImage.asset.url} heading={post.title} date={post.date} description={post.shortDesc}/>
+            </GridColumn>
+          ))}
+
+            </GridRow>
+            </Grid>
         </div>
-      </div>
+        </div>
        );
    }
+   
    
 }
