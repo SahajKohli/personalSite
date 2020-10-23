@@ -23,19 +23,21 @@ export default function Blogpost(props: BlogpostProps){
     useEffect(() => {
         sanityClient
           .fetch(
-            `*[slug.current == $slug]{
-              title,
-              slug,
-              mainImage{
+            `*[slug.current == "${slug}"]{
+                title,
+                slug,
+                category,
+                "date": publishedAt,
+                mainImage{
                 asset->{
-                  _id,
-                  url
+                   _id,
+                   url
                  }
                },
-             body,
-            "name": author->name,
-            "authorImage": author->image
-           }`,
+               body,
+               "name": author->name,
+               "authorImage": author->image
+            }`,
             { slug }
           )
           .then((data) => setPostData(data[0]))
@@ -51,7 +53,7 @@ export default function Blogpost(props: BlogpostProps){
            )
       };
 
-      console.log(urlFor(postData.mainImage).url());
+      console.log(postData.body);
       return (
             <Grid>
                 <GridRow>
@@ -81,6 +83,26 @@ export default function Blogpost(props: BlogpostProps){
                                 <GridColumn width= '4'></GridColumn>
                             </Grid>
                             
+                        </GridRow>
+                        <GridRow>
+                            <br/>
+                            <br/>
+                        </GridRow>
+                        <GridRow className='textbody'>
+                            <Grid>
+                                <GridColumn width='1'></GridColumn>
+                                <GridColumn  width='14'>
+                                    <BlockContent
+                                        blocks={postData.body}
+                                        projectId={sanityClient.clientConfig.projectId}
+                                        dataset={sanityClient.clientConfig.dataset}
+                                    />
+                                    <div className='date'> 
+                                        Published On: {postData.date}
+                                    </div>
+                                </GridColumn>
+                                <GridColumn width='1'></GridColumn>
+                            </Grid>
                         </GridRow>
                     </GridColumn>
                     <GridColumn width='3'></GridColumn>

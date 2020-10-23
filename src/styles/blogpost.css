@@ -38,3 +38,22 @@
     max-width: 10%;
     border-radius: 50%;
 }
+
+.textbody{
+    background-color: rgba(83, 72, 72, 0.664);
+    border-radius: 15px;
+    font-size: x-large;
+    color: white
+}
+
+.date{
+    color:  rgb(242, 113, 28);
+    font-size: xx-large;
+
+}
+
+.tags{
+    color: darkgrey;
+    font-size: large;
+
+}
