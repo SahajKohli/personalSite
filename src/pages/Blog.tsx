@@ -46,7 +46,7 @@ export default function Blog() {
                 {allPostsData &&
           allPostsData.map((post, index) => (
               <GridColumn>
-                  <BlogTile  link={"/" + post.slug.current} image={post.mainImage.asset.url} heading={post.title} date={post.date} description={post.shortDesc}/>
+                  <BlogTile  link={"blogpost/" + post.slug.current} image={post.mainImage.asset.url} heading={post.title} date={post.date} description={post.shortDesc}/>
             </GridColumn>
           ))}
 

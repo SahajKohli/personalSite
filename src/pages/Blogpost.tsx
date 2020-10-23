@@ -63,7 +63,7 @@ export default function Blogpost(props: BlogpostProps){
                             <br/>
                             <br/>
                         </GridRow>
-                        <GridRow className='header' style={{backgroundImage: `url(${urlFor(postData.mainImage).url()})`}}>
+                        <GridRow className='blogHeader' style={{backgroundImage: `url(${urlFor(postData.mainImage).url()})`}}>
                             <Grid>
                                 <GridColumn width= '4'></GridColumn>
                                 <GridColumn width= '8'>
