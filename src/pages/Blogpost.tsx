@@ -66,15 +66,15 @@ export default function Blogpost(props: BlogpostProps){
                                 <GridColumn width= '4'></GridColumn>
                                 <GridColumn width= '8'>
                                     <div className='headerMeta'>
-                                    <div className='headerTitle'>
-                                {postData.title}
-                                 </div>
-                                <div className='author'>
-                                    <img className='authorImage' src ={urlFor(postData.authorImage).url()} />
-                                <div className='authorName'>
-                                    {postData.name}
-                                </div>
-                            </div>
+                                        <div className='headerTitle'>
+                                            {postData.title}
+                                        </div>
+                                        <div className='author'>
+                                            <img className='authorImage' src ={urlFor(postData.authorImage).url()} />
+                                            <div className='authorName'>
+                                                {postData.name}
+                                            </div>
+                                        </div>
                                     </div>
                                
                                 </GridColumn>
