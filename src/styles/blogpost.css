@@ -1,0 +1,39 @@
+.header{
+    height: 300px;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.headerMeta{
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.705);
+}
+
+.headerTitle{
+    opacity: 1;
+    padding-top: 10%;
+    -webkit-text-fill-color: darkgrey; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; 
+     font-size: 400%;
+}
+.author{
+    display:flex;
+    justify-content:center;
+    vertical-align: middle;
+    align-self: center;
+    padding-bottom: 10px;
+}
+.authorName{
+    display:flex;
+    font-size: large;
+    padding-left: 10px;
+    align-self: flex-end;
+}
+.authorImage{
+    display:flex;
+    max-height: 10%;
+    max-width: 10%;
+    border-radius: 50%;
+}
