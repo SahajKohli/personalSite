@@ -13,6 +13,22 @@ import {contactMeConstants} from '../staticContent/contactMeConstants';
                     </GridColumn>
                     <GridColumn width='6'>
                         <Header as='h1' color='orange'>{contactMeConstants.heading}</Header>
+
+                        <form name="contact" method="post">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p>
+                        <label style={{color:'grey', fontSize:'15px'}}>Your Name: <input type="text" name="name"/></label>
+                        </p>
+                        <p>
+                        <label style={{color:'grey', fontSize:'15px'}}>Your Email: <input type="email" name="email"/></label>
+                        </p>
+                        <p>
+                        <label style={{color:'grey', fontSize:'15px'}}>Message: <textarea name="message"></textarea></label>
+                        </p>
+                        <p>
+                        <button type="submit">Send</button>
+                        </p>
+                        </form>
                         <div style={{color:'grey', fontSize:'15px'}}>
                             {contactMeConstants.desc}
                         </div>
