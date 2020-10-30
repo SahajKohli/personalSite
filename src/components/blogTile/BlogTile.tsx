@@ -17,7 +17,7 @@ const BlogTile =(props: CardProps) => {
     return (
         <a href={props.link}>
             <div className='blogtile' >
-                <img className='image' src ={props.image} />
+                <img className='blogTileimage' src ={props.image} />
 
                 <div className='data'>
                     <div className='heading'>{props.heading}</div>
