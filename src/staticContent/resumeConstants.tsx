@@ -29,7 +29,7 @@ let beer: SemanticICONS = 'beer';
 
 export const resumePageConsts = {
     heading: 'About Me:',
-    subheading: <p>Hi! Thanks for taking the time to take a look through my resume. I'm Senior Software Engineer with 3 years of fulltime Expirence. I've been working in the indsutry since 2017 (When I graduated). I've worked on Enterprise codebases and contributed to opensource code bases. </p>,
+    subheading: <p>Hi! Thanks for taking the time to take a look through my resume. I'm Senior Software Engineer with 3 years of fulltime Experience. I've been working in the industry since 2017 (When I graduated). I've worked on Enterprise codebase and contributed to open-source projects. </p>,
 }
  
 
@@ -51,7 +51,7 @@ export const expConstants = {
         {
             position: 'Software Engineer',
             company: 'We Company',
-            description: <p>Created new services in GO, also created new expirences in ReactJS. Created new workflow and helped define CD/CI for web.</p>,
+            description: <p>Created new service in GO that interacted with external services. Implemented new features on WeWork site to allow printing from anywhere and support page. Created new workflow and helped define CD/CI for web.</p>,
             image: wework,
             location: 'Manhattan, NY',
             date: 'March 2019 - September 2020', 
@@ -59,7 +59,7 @@ export const expConstants = {
         {
             position: 'Software Engineer',
             company: 'Amazon Inc.',
-            description: <p>Worked on both backend projects and frontend Ones. Created pages in Java Spring and rewrote Audible's Checkout Flow. Also worked on Library adn Wishlist at Audible. Then worked to redefine listening on web for Audible, created POC to move towards open-source tech and the implemented the architecture.  </p>,
+            description: <p>Worked on both backend projects and frontend Ones. Created pages in Java Spring and rewrote Audible's Checkout Flow. Also worked on Library adn Wishlist at Audible. Then worked to redefine listening on web for Audible by creating a POC to move towards a different Codec and standard for web player.  </p>,
             image: amazon,
             location: 'Manhattan, NY',
             date: 'January 2017 - March 2019', 
@@ -67,7 +67,7 @@ export const expConstants = {
         {
             position: 'Software Engineer Intern',
             company: 'AT&T',
-            description: <p>Helped create program to run sentimental analysis using in house NLP. Worked on Nano-Cube Data Structure.</p>,
+            description: <p>Helped create program to run sentimental analysis using in-house NLP. Worked on a Nano-Cube Data Structure.</p>,
             image: att,
             location: 'Manhattan, NY',
             date: 'September 2016 - January 2017', 
@@ -75,7 +75,7 @@ export const expConstants = {
         {
             position: 'Software Engineer Intern',
             company: 'Johnson & Johnson',
-            description: <p>Worked as a PMO intern in a Pharamaseutical subsidiary, to help make the workflow for project management orginzation more fluid.</p>,
+            description: <p>Worked as a PMO intern in a Pharmaceutical subsidiary, worked to help make the workflow for project management organization more fluid.</p>,
             image: jnj,
             location: 'Manhattan, NY',
             date: 'January 2015 - June 2016', 
@@ -90,7 +90,7 @@ export const eductionConstants = {
         {
             position: 'Computer Science & ITI',
             company: 'Rutgers University',
-            description: <p>Double majored in computer science and ITI.</p>,
+            description: <p>Double majored in Computer Science and ITI.</p>,
             image: rutgers,
             location: 'NJ',
             date: 'September 2012 - January 2017', 
@@ -110,17 +110,17 @@ export const intrestsConstants=  {
         {
             heading: 'Coding',
             icon:  code,
-            description: <p>I love trying to learn new things in our industry, I try to pick up on new languages and new tech whenver I can. I attend virtual conferences to stay ahead of the market and the industry of new trends all the time.</p>,
+            description: <p>I love trying to learn new things in our industry, I try to pick up on new languages and new tech whenever I can.</p>,
         },
         {
             heading: 'Technology',
             icon: microchip,
-            description: <p>From the latest ARM chip to the newest iPhone, I love and follow all things tech. I also love reading about how technology is chaning humans and influencing our society.</p>,
+            description: <p>I love following the latest and greatest technologies. I'm also fascinated by how humans interact with new technologies and the impact of tech on human behavior. </p>,
         },
         {
             heading: 'Travel',
             icon: suitcase,
-            description: <p>I love traveling to differnet places and trying to see new sights. I look forward to it every year. </p>,
+            description: <p>I love traveling to different places and trying to see new sights. I look forward to it every year. </p>,
         },
         {
             heading: 'Hiking',

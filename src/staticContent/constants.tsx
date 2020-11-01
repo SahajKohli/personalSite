@@ -32,8 +32,8 @@ export const IndexLedeblurb = (
     <p>
       I'm a <span style={{color:"#f2711c"}} >fullstack Engineer</span> based in the US <span>🇺🇸. </span>
        I've worked with everything from  <span style={{color:"#f2711c"}} >Enterprise Java</span> to <span style={{color:"#f2711c"}} >React</span>. 
-       I've used everything from  <span style={{color:"#f2711c"}} >Docker</span> to <span style={{color:"#f2711c"}} >Netlify </span>. I love coding and I'm always down to talk shop.
-       I also <span style={{color:"#f2711c"}} >blog </span> and <span style={{color:"#f2711c"}} >give talks </span> about my expierences as a Senior Engineer.
+       I've used everything from  <span style={{color:"#f2711c"}} >Docker</span> to <span style={{color:"#f2711c"}} >Netlify </span>. I love coding and I'm always open to talk shop.
+       I also <span style={{color:"#f2711c"}} >blog </span> and <span style={{color:"#f2711c"}} >give talks </span> about my experiences as a Engineer.
     </p>
   )
 
@@ -67,7 +67,7 @@ export const IndexLedeblurb = (
         image: facialRecog,
         heading: 'Gatsby Facial Recognization',
         metaData: '08/03/2020',
-        description: <p>A Gatsby site that allows users to upload a picture and see how closely they are to looking like Will Ferrel </p>,
+        description: <p>A Gatsby site that allows users to upload a picture and see how much they look like Nick Cage </p>,
         link: 'https://github.com/SahajKohli/Facial-Recognition-ML-Gatsby/tree/master/facial-recog',
         icon: github,
         linkDec: 'Github Link',
@@ -76,7 +76,7 @@ export const IndexLedeblurb = (
         image: data,
         heading: 'Daily Algoryhtm Site',
         metaData: '9/13/2020',
-        description: <p>A site I created to bascially post data structure questions daily and their solutions</p>,
+        description: <p>A site I created to post data structure questions daily and their solutions</p>,
         link: 'https://sahajkohli.github.io/dailyQuestion/',
         icon: github,
         linkDec: 'Site Link',
