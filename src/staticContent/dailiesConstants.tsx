@@ -46,19 +46,19 @@ const DailiesApplicaitons = {
             header: 'Email', 
             type: 'Spark', 
             image: spark , 
-            description: <p>My favorite Email client after trying out a bunch.</p>,
+            description: <p>My favorite Email client, I finally settled on Spark after trying a handful of other clients</p>,
         },
         {
             header: 'Notes', 
             type: 'Notion', 
             image: notion , 
-            description: <p>Pretty much the only way I stay organized.</p>,
+            description: <p>I love the way Notion allows me to organize different projects and notes.</p>,
         },
         {
             header: 'Calendar', 
             type: 'iCal', 
             image: cal , 
-            description: <p>The default mail client sync everything so it works really well for me.</p>,
+            description: <p>The ability to sync between every device and simplicity of the application makes it a no brainier for me</p>,
         },
         {
             header: 'Browser', 
@@ -70,7 +70,7 @@ const DailiesApplicaitons = {
             header: 'Secondary Browser', 
             type: 'Chrome', 
             image: chrome , 
-            description: <p>Chrome dev tools and Lighthouse being built in is a no brainer for web devlopment.</p>,
+            description: <p>Chrome dev tools and Lighthouse being built in is a no brainier for web development.</p>,
         },
         {
             header: 'API Devlopment', 
@@ -90,19 +90,19 @@ const DailiesTerminalSetup ={
             header: 'Terminal', 
             type: 'Bash', 
             image: terminal , 
-            description: <p>I use the terminal on my mac, the move to zsh from Apple has made it easier to devlopment natively.</p>,
+            description: <p>I use the terminal on my mac, the move to zsh from Apple has made it easier to develop natively.</p>,
         },
         {
             header: 'Solarized Dark', 
             type: 'Terminal Font and Theme', 
             image: solar , 
-            description: <p>I love dark mode on all things and solarized is my favorite theme by far.</p>,
+            description: <p>I love dark mode on all things and this theme makes it so on the terminal</p>,
         },
         {
             header: 'Powerline10k', 
             type: 'Terminal Theme', 
             image: powerline , 
-            description: <p>This addition to your terminal allows you to see your git status and current directory rather then doing PWD everytime.</p>,
+            description: <p>This addition to your terminal allows you to see your git status and current directory rather then doing PWD every time.</p>,
         },
     ]
 }
@@ -115,13 +115,13 @@ const DailiesWorkStation = {
             header: 'Autonomous Standing Desk', 
             type: 'Desk', 
             image: desk , 
-            description: <p>I found this desk online when alot of people recommended it, its cheap and it works really well.</p>,
+            description: <p>I found this desk online after reading a lot of reviews, its cheap and works really well.</p>,
         },
         {
             header: 'Autonomous ErgoChair', 
             type: 'Chair', 
             image: chair , 
-            description: <p>This chair is on the more expensive side but 100% worth it, it supports your back relly well.</p>,
+            description: <p>This chair is on the more expensive side but 100% worth it, it supports your back nicely.</p>,
         },
         {
             header: 'Macbook Pro 16 inch', 
@@ -133,7 +133,7 @@ const DailiesWorkStation = {
             header: 'Alienware 34inch Monitor', 
             type: 'Monitor', 
             image: monitor , 
-            description: <p>I got this monitor to game on but works really well to code on as well. Ultrawides are amazing for having multiple VSCode windows.</p>,
+            description: <p>I got this monitor to game on but works really well to code on. Ultra-wides are amazing for having multiple VSCode windows.</p>,
         },
         {
             header: 'Dell 25inch Monitor', 
@@ -145,13 +145,13 @@ const DailiesWorkStation = {
             header: 'Logitech MX Master 3', 
             type: 'Mouse', 
             image: mouse , 
-            description: <p>This mouse is amazing, the scroll wheel on it is perfect and I cannot reccomend it enough.</p>,
+            description: <p>This mouse is amazing, the scroll wheel on it is perfect and I cannot recommend it enough.</p>,
         },
         {
             header: 'Keychron Mechanical Keyboard', 
             type: 'Keyboard', 
             image: keyboard , 
-            description: <p>I love mech. keyboards and I always return to this one because the feel.</p>,
+            description: <p>After trying out a bunch of keyboards and building my own I settled on this one for work.</p>,
         },
     ]
 }
@@ -176,7 +176,7 @@ const DailiesPhotoGraphy = {
             header: 'Sony 18-105mm Lense', 
             type: 'Lense', 
             image: lense, 
-            description: <p>I haven't gotten to use it that much , but exicted to try it out more.</p>,
+            description: <p>I haven't gotten to use it that much , but excited to try it out more.</p>,
         },
 
     ]
@@ -190,13 +190,13 @@ const DailiesDrawing = {
             header: 'iPad', 
             type: 'Tablet', 
             image: ipad , 
-            description: <p>I have an older iPad pro form 2017 but it works well to draw on.</p>,
+            description: <p>I have an older iPad pro from 2017 but it works well to draw on.</p>,
         },
         {
             header: 'iPad Pencil', 
             type: 'Pen', 
             image: pencil , 
-            description: <p>The pencil works really well with the ipad.</p>,
+            description: <p>The pencil works really well with the iPad.</p>,
         },
         {
             header: 'Sketchbook', 

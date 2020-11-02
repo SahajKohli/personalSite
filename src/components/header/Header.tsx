@@ -15,16 +15,20 @@ const HeaderOfSite = () => {
                     <GridColumn width ='3'>
                         <Link to='/' style={{color:"grey", fontSize:'medium', verticalAlign:'top', textAlign:'center'}}><img  className='headerIcon'src={iconImage}/> <div className='headerIconText'>Sahaj Kohli</div></Link>
                     </GridColumn>
-                    <GridColumn width ='7'></GridColumn>
-                    <GridColumn width ='2'>
+                    <GridColumn width ='9'></GridColumn>
+                    <GridColumn width ='1'>
                         <HeaderButton link='/resume' text='About'/>
                     </GridColumn>
-                    <GridColumn width ='2'>
+                    <GridColumn width ='1'>
                         <HeaderButton link='/connect' text='Contact'/>
                     </GridColumn>
-                    <GridColumn width ='2'>
+                    <GridColumn width ='1'>
+                        <HeaderButton link='/blog' text='Blog'/>
+                    </GridColumn>
+                    <GridColumn width ='1'>
                         <HeaderButton link='/dailies' text='Daily'/>
                     </GridColumn>
+
                 </GridRow>
             </Grid>
     );
